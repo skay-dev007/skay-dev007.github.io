@@ -19,6 +19,44 @@ career-profile:
     systems. I have built and deployed AI and ML solutions across healthcare,
     regulatory compliance, and legal technology.
 
+experiences:
+  title: Experience
+  info:
+  - role: Machine Learning Engineer
+    time: Aug 2025 - Aug 2026
+    company: Alberta Machine Intelligence Institute (Amii)
+    details: |
+      Built and deployed an agentic RAG system for regulatory compliance,
+      improving accuracy by 40% over a vanilla RAG baseline.
+
+  - role: Machine Learning Researcher
+    time: May 2024 - Aug 2025
+    company: Digital Emergency Medicine, HealthLink BC & UBC
+    details: |
+      Built data pipelines and triage-routing models for BC's 8-1-1 call data,
+      and presented the work to healthcare policymakers at CAHSPR 2025.
+
+  - role: Graduate Research Assistant
+    time: May 2022 - Apr 2024
+    company: Data Management and Mining Lab, UBC Vancouver
+    details: |
+      Developed BIOREPs for biomedical relation extraction, achieving
+      performance comparable to fine-tuned domain models without additional training.
+
+  - role: Applied ML Research Intern
+    time: May 2023 - Aug 2023
+    company: Huawei R&D, Canadian Research Center
+    details: |
+      Developed a StyleGAN-based synthetic data pipeline for skin-rendering
+      research that contributed to work published at SIGGRAPH Asia and NeurIPS WiML.
+
+  - role: Research Associate
+    time: Jul 2020 - Jun 2021
+    company: Data Science and Analytics Center, IIIT Hyderabad
+    details: |
+      Built an NLP system for legal document classification, improving weighted
+      F1 by 37% over the baseline.
+
 footer: >
   Designed with <i class="fas fa-heart"></i> by
   <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

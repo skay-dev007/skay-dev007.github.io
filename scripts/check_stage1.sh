@@ -17,6 +17,12 @@ grep -q '3+ years of hands-on' _data/data.yml
 grep -q 'University of British' _data/data.yml
 grep -q 'solutions across healthcare' _data/data.yml
 grep -q 'regulatory compliance, and legal technology' _data/data.yml
+grep -q '^experiences:$' _data/data.yml
+grep -q '^  - role: Machine Learning Engineer' _data/data.yml
+grep -q '^  - role: Machine Learning Researcher' _data/data.yml
+grep -q '^  - role: Graduate Research Assistant' _data/data.yml
+grep -q '^  - role: Applied ML Research Intern' _data/data.yml
+grep -q '^  - role: Research Associate' _data/data.yml
 
 if rg -n -i 'Alan Doe|example@email|012 345|lorem ipsum|UA-[0-9]|linkedin.com/in' \
   _config.yml _data README.md; then
