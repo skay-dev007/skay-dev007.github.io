@@ -13,10 +13,15 @@ grep -q '^  name: Swati$' _data/data.yml
 grep -q '^  tagline: Applied AI Engineer & Researcher$' _data/data.yml
 grep -q '^  avatar: swati-profile.jpg$' _data/data.yml
 grep -q '^  github: skay-dev007$' _data/data.yml
-grep -q '3+ years of hands-on' _data/data.yml
-grep -q 'University of British' _data/data.yml
-grep -q 'solutions across healthcare' _data/data.yml
-grep -q 'regulatory compliance, and legal technology' _data/data.yml
+grep -q "I'm an Applied AI Engineer and Researcher with 3+ years of experience" _data/data.yml
+grep -q 'University of British Columbia,' _data/data.yml
+grep -q '^    Vancouver\.' _data/data.yml
+grep -q "I've worked on AI and ML projects across healthcare" _data/data.yml
+grep -q 'building and deploying working systems' _data/data.yml
+if rg -n 'improving accuracy by 40%|improving weighted F1 by 37%' _data/data.yml; then
+  echo 'Removed experience metrics are still present.' >&2
+  exit 1
+fi
 grep -q '^experiences:$' _data/data.yml
 grep -q '^  - role: Machine Learning Engineer' _data/data.yml
 grep -q '^  - role: Machine Learning Researcher' _data/data.yml

@@ -14,12 +14,11 @@ sidebar:
 career-profile:
   title: About
   summary: |
-    I am an Applied AI Engineer and Researcher with 3+ years of hands-on
-    experience and an MSc in Computer Science from the University of British
-    Columbia in Vancouver. My work sits at the intersection of applied AI and
-    machine learning, with a focus on translating research into reliable
-    systems. I have built and deployed AI and ML solutions across healthcare,
-    regulatory compliance, and legal technology.
+    I'm an Applied AI Engineer and Researcher with 3+ years of experience and
+    an MSc in Computer Science from the University of British Columbia,
+    Vancouver. I've worked on AI and ML projects across healthcare, regulatory
+    compliance, and legal technology, taking ideas from research and
+    experimentation through to building and deploying working systems.
 
 experiences:
   title: Experience
@@ -28,8 +27,7 @@ experiences:
     time: Aug 2025 - Aug 2026
     company: Alberta Machine Intelligence Institute (Amii)
     details: |
-      Built and deployed an agentic RAG system for regulatory compliance,
-      improving accuracy by 40% over a vanilla RAG baseline.
+      Built and deployed an agentic RAG system for regulatory compliance.
 
   - role: Machine Learning Researcher
     time: May 2024 - Aug 2025
@@ -56,8 +54,7 @@ experiences:
     time: Jul 2020 - Jun 2021
     company: Data Science and Analytics Center, IIIT Hyderabad
     details: |
-      Built an NLP system for legal document classification, improving weighted
-      F1 by 37% over the baseline.
+      Built an NLP system for legal document classification.
 
 publications:
   title: Selected Publications & Presentations
