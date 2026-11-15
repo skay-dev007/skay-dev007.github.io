@@ -57,6 +57,33 @@ experiences:
       Built an NLP system for legal document classification, improving weighted
       F1 by 37% over the baseline.
 
+publications:
+  title: Selected Publications & Presentations
+  papers:
+  - title: "Even Irrelevant Medical Context Weakens Refusal: Cross-Lingual Safety Failures in Medical RAG"
+    link: https://neurips.cc/virtual/2026/loc/sydney/177279
+    conference: Poster, Third Workshop on GenAI for Health, NeurIPS 2026
+
+  - title: "Understanding the Potential of Machine Learning to Improve Telephone Triage Decisions"
+    link: https://cahspr.ca/wp-content/uploads/2025/06/Book-of-Abstracts-Orals-CAHSPR-2025.pdf
+    conference: Oral presentation, CAHSPR 2025
+
+  - title: "Exploring the potential of LLMs for biomedical relation extraction"
+    link: https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0440989
+    conference: MSc thesis, University of British Columbia, 2024
+
+  - title: "Deep Albedo: A Spatially Aware Autoencoder Approach to Interactive Human Skin Rendering"
+    link: https://dl.acm.org/doi/abs/10.1145/3610542.3626112
+    conference: SIGGRAPH Asia 2023 Posters
+
+  - title: "Inclusive & Photorealistic Albedo Editing Through Latent Space Translation"
+    link: https://neurips.cc/virtual/2023/82149
+    conference: Poster, Women in ML, NeurIPS 2023
+
+  - title: "Aspect-based Summarization of Legal Case Files using Sentence Classification"
+    link: https://dl.acm.org/doi/abs/10.1145/3543873.3587611
+    conference: Companion Proceedings of the ACM Web Conference 2023
+
 footer: >
   Designed with <i class="fas fa-heart"></i> by
   <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

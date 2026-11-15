@@ -23,6 +23,15 @@ grep -q '^  - role: Machine Learning Researcher' _data/data.yml
 grep -q '^  - role: Graduate Research Assistant' _data/data.yml
 grep -q '^  - role: Applied ML Research Intern' _data/data.yml
 grep -q '^  - role: Research Associate' _data/data.yml
+grep -q '^publications:$' _data/data.yml
+grep -q '^  title: Selected Publications & Presentations$' _data/data.yml
+grep -q 'Even Irrelevant Medical Context Weakens Refusal' _data/data.yml
+grep -q 'Understanding the Potential of Machine Learning to Improve Telephone Triage Decisions' _data/data.yml
+grep -q 'Exploring the potential of LLMs for biomedical relation extraction' _data/data.yml
+grep -q 'Deep Albedo: A Spatially Aware Autoencoder Approach' _data/data.yml
+grep -q 'Inclusive & Photorealistic Albedo Editing Through Latent Space Translation' _data/data.yml
+grep -q 'Aspect-based Summarization of Legal Case Files using Sentence Classification' _data/data.yml
+test "$(grep -c '^  - title:' _data/data.yml)" -eq 6
 
 if rg -n -i 'Alan Doe|example@email|012 345|lorem ipsum|UA-[0-9]|linkedin.com/in' \
   _config.yml _data README.md; then
