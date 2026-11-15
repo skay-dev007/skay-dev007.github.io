@@ -39,7 +39,13 @@
 
     {% if sidebar.linkedin %}
     <li class="linkedin"><i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">{{ sidebar.linkedin }}</a>
+      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank" rel="noreferrer nofollow noopener">LinkedIn</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.medium %}
+    <li class="medium"><i class="fab fa-medium"></i>
+      <a href="https://{{ sidebar.medium }}/" target="_blank" rel="noreferrer nofollow noopener">Medium</a>
     </li>
     {% endif %}
 

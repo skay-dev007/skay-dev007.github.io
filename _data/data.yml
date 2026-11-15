@@ -7,6 +7,8 @@ sidebar:
   tagline: Applied AI Engineer & Researcher
   avatar: swati-profile.jpg
 
+  linkedin: "swati&#107;anwal"
+  medium: "swatiii&#107;anwal.medium.com"
   github: skay-dev007
 
 career-profile:
@@ -83,6 +85,21 @@ publications:
   - title: "Aspect-based Summarization of Legal Case Files using Sentence Classification"
     link: https://dl.acm.org/doi/abs/10.1145/3543873.3587611
     conference: Companion Proceedings of the ACM Web Conference 2023
+
+awards:
+  title: Awards
+  list:
+  - name: UBC Graduate Tuition Award
+    time: 2021-2024
+
+  - name: GHC Scholar
+    time: 2023
+
+  - name: Generation Google Scholar
+    time: 2022
+
+  - name: Mitacs Graduate Fellow
+    time: 2021
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by

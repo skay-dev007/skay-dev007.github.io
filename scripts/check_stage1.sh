@@ -32,8 +32,31 @@ grep -q 'Deep Albedo: A Spatially Aware Autoencoder Approach' _data/data.yml
 grep -q 'Inclusive & Photorealistic Albedo Editing Through Latent Space Translation' _data/data.yml
 grep -q 'Aspect-based Summarization of Legal Case Files using Sentence Classification' _data/data.yml
 test "$(grep -c '^  - title:' _data/data.yml)" -eq 6
+grep -q '^awards:$' _data/data.yml
+grep -q '^  title: Awards$' _data/data.yml
+grep -q '^  - name: UBC Graduate Tuition Award$' _data/data.yml
+grep -q '^    time: 2021-2024$' _data/data.yml
+grep -q '^  - name: GHC Scholar$' _data/data.yml
+grep -q '^    time: 2023$' _data/data.yml
+grep -q '^  - name: Generation Google Scholar$' _data/data.yml
+grep -q '^    time: 2022$' _data/data.yml
+grep -q '^  - name: Mitacs Graduate Fellow$' _data/data.yml
+grep -q '^    time: 2021$' _data/data.yml
+test "$(grep -c '^  - name:' _data/data.yml)" -eq 4
 
-if rg -n -i 'Alan Doe|example@email|012 345|lorem ipsum|UA-[0-9]|linkedin.com/in' \
+publications_line=$(rg -n -m 1 '\{% include publications.html %\}' index.html | cut -d: -f1)
+awards_line=$(rg -n -m 1 '\{% include awards.html %\}' index.html | cut -d: -f1)
+experiences_line=$(rg -n -m 1 '\{% include experiences.html %\}' index.html | cut -d: -f1)
+test "$publications_line" -lt "$awards_line"
+test "$awards_line" -lt "$experiences_line"
+
+grep -q '^  linkedin: "swati&#107;anwal"$' _data/data.yml
+grep -q '^  medium: "swatiii&#107;anwal.medium.com"$' _data/data.yml
+grep -q '>LinkedIn</a>' _includes/contact.html
+grep -q '>Medium</a>' _includes/contact.html
+grep -q 'rel="noreferrer nofollow noopener"' _includes/contact.html
+
+if rg -n -i 'Alan Doe|example@email|012 345|lorem ipsum|UA-[0-9]|linkedin.com/in|swatikanwal|kanwal' \
   _config.yml _data README.md; then
   echo 'Stage 1 contains sample or deferred personal content.' >&2
   exit 1
