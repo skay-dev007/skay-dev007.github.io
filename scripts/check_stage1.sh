@@ -52,10 +52,16 @@ grep -q '^    time: 2021$' _data/data.yml
 test "$(grep -c '^  - name:' _data/data.yml)" -eq 4
 
 publications_line=$(rg -n -m 1 '\{% include publications.html %\}' index.html | cut -d: -f1)
-awards_line=$(rg -n -m 1 '\{% include awards.html %\}' index.html | cut -d: -f1)
 experiences_line=$(rg -n -m 1 '\{% include experiences.html %\}' index.html | cut -d: -f1)
-test "$publications_line" -lt "$awards_line"
-test "$awards_line" -lt "$experiences_line"
+test "$publications_line" -lt "$experiences_line"
+if rg -n '\{% include awards.html %\}' index.html; then
+  echo 'Awards must not render in the main column.' >&2
+  exit 1
+fi
+contact_line=$(rg -n -m 1 '\{% include contact.html %\}' _includes/sidebar.html | cut -d: -f1)
+awards_line=$(rg -n -m 1 '\{% include awards.html %\}' _includes/sidebar.html | cut -d: -f1)
+test "$contact_line" -lt "$awards_line"
+grep -q 'awards-container education-container container-block' _includes/awards.html
 
 grep -q '^  linkedin: "swati&#107;anwal"$' _data/data.yml
 grep -q '^  medium: "swatiii&#107;anwal.medium.com"$' _data/data.yml

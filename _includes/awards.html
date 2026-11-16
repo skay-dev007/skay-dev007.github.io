@@ -1,25 +1,17 @@
 {% assign awards = site.data.data.awards %}
 {% if awards %}
-<section class="section awards-section">
+<div class="awards-container education-container container-block">
 
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
-    </span>
+  <h2 class="container-block-title">
     {{ awards.title }}
   </h2>
 
   {% for award in awards.list %}
   <div class="item">
-    <div class="meta">
-      <div class="upper-row">
-        <h3 class="job-title">{{ award.name }}</h3>
-        <div class="time">{{ award.time }}</div>
-      </div><!--//upper-row-->
-    </div><!--//meta-->
+    <h4 class="degree">{{ award.name }}</h4>
+    <div class="time">{{ award.time }}</div>
   </div><!--//item-->
   {% endfor %}
 
-</section><!--//section-->
+</div><!--//awards-container-->
 {% endif %}
