@@ -9,6 +9,8 @@ test ! -e CNAME
 test -f assets/images/swati-profile.jpg
 grep -q '^title: Swati | Applied AI Engineer & Researcher$' _config.yml
 grep -q "^url: 'https://skay-dev007.github.io'$" _config.yml
+grep -q '^exclude:$' _config.yml
+grep -q '^  - docs$' _config.yml
 grep -q '^  name: Swati$' _data/data.yml
 grep -q '^  tagline: Applied AI Engineer & Researcher$' _data/data.yml
 grep -q '^  avatar: swati-profile.jpg$' _data/data.yml
