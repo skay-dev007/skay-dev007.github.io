@@ -88,6 +88,7 @@ projects:
   title: Projects
   assignments:
   - title: "Simplify: Accessible Math Adaptation Tool"
+    link: https://github.com/sk-dev7/rail_agents
     tagline: "Railtown AI for Good Hackathon finalist, Nov 2025. Built a multi-agent Streamlit application that adapted math worksheets for different K-7 learning needs."
 
 awards:
