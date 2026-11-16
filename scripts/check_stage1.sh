@@ -31,7 +31,11 @@ grep -q '^  - role: Graduate Research Assistant' _data/data.yml
 grep -q '^  - role: Applied ML Research Intern' _data/data.yml
 grep -q '^  - role: Research Associate' _data/data.yml
 grep -q '^publications:$' _data/data.yml
-grep -q '^  title: Selected Publications & Presentations$' _data/data.yml
+grep -q '^  title: Selected Work$' _data/data.yml
+if rg -n 'Selected Publications & Presentations' _data/data.yml; then
+  echo 'The old publications heading is still present.' >&2
+  exit 1
+fi
 grep -q 'Even Irrelevant Medical Context Weakens Refusal' _data/data.yml
 grep -q 'Understanding the Potential of Machine Learning to Improve Telephone Triage Decisions' _data/data.yml
 grep -q 'Exploring the potential of LLMs for biomedical relation extraction' _data/data.yml

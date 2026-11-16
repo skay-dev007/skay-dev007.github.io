@@ -57,7 +57,7 @@ experiences:
       Built an NLP system for legal document classification.
 
 publications:
-  title: Selected Publications & Presentations
+  title: Selected Work
   papers:
   - title: "Even Irrelevant Medical Context Weakens Refusal: Cross-Lingual Safety Failures in Medical RAG"
     link: https://neurips.cc/virtual/2026/loc/sydney/177279
