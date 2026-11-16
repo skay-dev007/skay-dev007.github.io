@@ -49,6 +49,12 @@
     </li>
     {% endif %}
 
+    {% if sidebar.x %}
+    <li class="x-twitter"><i class="fab fa-x-twitter"></i>
+      <a href="https://x.com/{{ sidebar.x }}" target="_blank" rel="noreferrer nofollow noopener">X</a>
+    </li>
+    {% endif %}
+
     {% if sidebar.xing %}
     <li class="xing"><i class="fab fa-xing"></i>
       <a href="https://www.xing.com/profile/{{ sidebar.xing }}" target="_blank">{{ sidebar.xing }}</a>

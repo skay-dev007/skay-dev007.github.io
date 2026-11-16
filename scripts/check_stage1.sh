@@ -69,8 +69,11 @@ grep -q 'awards-container education-container container-block' _includes/awards.
 
 grep -q '^  linkedin: "swati&#107;anwal"$' _data/data.yml
 grep -q '^  medium: "swatiii&#107;anwal.medium.com"$' _data/data.yml
+grep -q '^  x: "swatiii&#107;anwal"$' _data/data.yml
 grep -q '>LinkedIn</a>' _includes/contact.html
 grep -q '>Medium</a>' _includes/contact.html
+grep -q 'href="https://x.com/{{ sidebar.x }}"' _includes/contact.html
+grep -q '>X</a>' _includes/contact.html
 grep -q 'rel="noreferrer nofollow noopener"' _includes/contact.html
 
 if rg -n -i 'Alan Doe|example@email|012 345|lorem ipsum|UA-[0-9]|linkedin.com/in|swatikanwal|kanwal' \
