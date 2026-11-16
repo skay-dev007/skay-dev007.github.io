@@ -12,14 +12,29 @@ sidebar:
   x: "swatiii&#107;anwal"
   github: skay-dev007
 
+  skills_interests:
+    title: Skills &amp; Interests
+    items:
+    - Applied Machine Learning
+    - LLM Evaluation
+    - Retrieval Augmented Generation
+    - Model Fine-tuning and Deployment
+    - Reinforcement Learning
+
 career-profile:
   title: About
   summary: |
     I'm an Applied AI Engineer and Researcher with 3+ years of experience and
-    an MSc in Computer Science from the University of British Columbia,
-    Vancouver. I've worked on AI and ML projects across healthcare, regulatory
-    compliance, and legal technology, taking ideas from research and
-    experimentation through to building and deploying working systems.
+    an MSc in Computer Science from the University of British Columbia.
+
+    My work spans LLMs, RAG, and applied machine learning across healthcare,
+    regulatory compliance, and legal technology. I've worked on problems ranging
+    from biomedical NLP research and machine learning for healthcare decision
+    support to building and deploying agentic AI systems for real-world applications.
+
+    I'm particularly interested in bridging AI research and practical applications,
+    working with domain experts to understand problems, evaluate solutions, and
+    build systems that are reliable and useful.
 
 experiences:
   title: Experience

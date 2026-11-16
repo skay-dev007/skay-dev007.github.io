@@ -1,0 +1,14 @@
+{% assign skills_interests = site.data.data.sidebar.skills_interests %}
+{% if skills_interests %}
+<div class="skills-interests-container container-block">
+
+  <h2 class="container-block-title">
+    {{ skills_interests.title }}
+  </h2>
+
+  <p class="skills-interests-list">
+    {{ skills_interests.items | join: " &middot; " }}
+  </p>
+
+</div><!--//skills-interests-->
+{% endif %}
