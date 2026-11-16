@@ -42,7 +42,10 @@ grep -q 'Exploring the potential of LLMs for biomedical relation extraction' _da
 grep -q 'Deep Albedo: A Spatially Aware Autoencoder Approach' _data/data.yml
 grep -q 'Inclusive & Photorealistic Albedo Editing Through Latent Space Translation' _data/data.yml
 grep -q 'Aspect-based Summarization of Legal Case Files using Sentence Classification' _data/data.yml
-test "$(grep -c '^  - title:' _data/data.yml)" -eq 6
+ruby -ryaml -e '
+  data = YAML.load_file("_data/data.yml")
+  abort "Expected six selected-work entries." unless data.dig("publications", "papers").length == 6
+'
 grep -q '^awards:$' _data/data.yml
 grep -q '^  title: Awards$' _data/data.yml
 grep -q '^  - name: UBC Graduate Tuition Award$' _data/data.yml
